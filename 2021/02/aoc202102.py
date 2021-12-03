@@ -7,14 +7,38 @@ import sys
 
 def parse(puzzle_input):
     """Parse input"""
+    return puzzle_input
 
 
 def part1(data):
     """Solve part 1"""
+    position = depth = 0
+    for i in data.splitlines():
+        direction, count = i.split()
+        count = int(count)
+        if direction == 'forward':
+            position += count
+        elif direction == 'up':
+            depth -= count
+        else:
+            depth += count
+    return position * depth
 
 
 def part2(data):
     """Solve part 2"""
+    position = depth = aim = 0
+    for i in data.splitlines():
+        direction, count = i.split()
+        count = int(count)
+        if direction == 'down':
+            aim += count
+        elif direction == 'up':
+            aim -= count
+        else:
+            position += count
+            depth += count*aim
+    return position * depth
 
 
 def solve(puzzle_input):
