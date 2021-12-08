@@ -7,7 +7,7 @@ import sys
 
 def parse(puzzle_input):
     """Parse input"""
-    pass
+    return puzzle_input
 
 
 def part1(data):
