@@ -38,7 +38,8 @@ def part2(data):
         not_fuel = []
         for crab in data:
             d = abs(crab-pos)  # distance needed to reach horisontal
-            fuel_needed = int(d + d*(d-1)/2)
+            triangle_number = d*(d-1)/2  # extra rate need for each step
+            fuel_needed = int(d + triangle_number)
             not_fuel.append(fuel_needed)
         # adds each sum of fuel used to a dict with its 'value' as position of the horizontal
         fuel[pos] = sum(not_fuel)
