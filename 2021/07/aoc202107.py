@@ -4,7 +4,6 @@
 import pathlib
 import sys
 import numpy as np
-import statistics as stat
 
 
 def parse(puzzle_input):
