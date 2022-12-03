@@ -1,0 +1,3 @@
+for day in {05..25}; do 
+cp -av 04/ $day
+done
