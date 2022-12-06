@@ -1,8 +1,9 @@
 from pathlib import Path
 
-# inp = Path('input.txt').read_text().splitlines()
-stack_data, actions = Path('sample.txt').read_text().split("\n\n")
+stack_data, actions = Path('input.txt').read_text().split("\n\n")
+# stack_data, actions = Path('sample.txt').read_text().split("\n\n")
 stack_data = stack_data.splitlines()
+actions = actions.splitlines()
 stacks = {}
 numbers = stack_data.pop()
 
@@ -17,4 +18,18 @@ for line in reversed(stack_data):
             key = (i-1)//4 + 1
             stacks[key].append(line[i])
 
-# 
+# do actions
+for action in actions:
+    # move 1 from 2 to 1
+    nums= action.split()
+    nums.remove("move")
+    nums.remove("from")
+    nums.remove("to")
+    nums = [int(i) for i in nums]
+    amount, frm, to = nums
+    for _ in range(amount):
+        stacks[to].append(stacks[frm].pop())
+ans = ""
+for i in range(1,len(stacks)+1):
+    ans += stacks[i].pop()
+print(ans)
