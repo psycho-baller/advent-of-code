@@ -16,23 +16,20 @@ func main() {
 		os.Exit(0)
 	}
 
-	example_input := ``
 	fmt.Println("--- Part One ---")
-	fmt.Println("Result:", part1(input, example_input))
+	fmt.Println("Result:", part1(input))
 	fmt.Println("--- Part Two ---")
-	fmt.Println("Result:", part2(input, example_input))
+	fmt.Println("Result:", part2(input))
 
 	os.Exit(0)
 }
 
 // part one
-func part1(input string, example string) int {
+func part1(input string) int {
 	return 0
 }
 
 // part two
-func part2(input string, example string) int {
+func part2(input string) int {
 	return 0
 }
-
-

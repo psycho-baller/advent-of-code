@@ -8,7 +8,7 @@ import (
 
 func Test(t *testing.T) {
 	assert := assert.New(t)
-	input := ""
+	input := ``
 
 	t.Run("part 1", func(t *testing.T) {
 		expected := 0

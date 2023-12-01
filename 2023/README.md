@@ -8,6 +8,8 @@ Decided to use Go for this year's Advent of Code. This is my workflow:
 cp -r template 01 # or whatever day
 ```
 
+## get the example input and output and place them in main_test.go
+
 ## run tests for day 1
 
 ```bash
