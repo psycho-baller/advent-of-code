@@ -9,7 +9,8 @@ import (
 
 func main() {
 	// read from http request
-	input, err := utils.ReadHTTP(2023, 1)
+	day := 1
+	input, err := utils.ReadHTTP(2023, day)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(0)

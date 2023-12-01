@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestDay01(t *testing.T) {
+func Test(t *testing.T) {
 	assert := assert.New(t)
 	input := ""
 

@@ -1,14 +1,24 @@
 # Advent of Code Golang Starter
 
-Decided to use Go for this year's Advent of Code. This is a starter template
+Decided to use Go for this year's Advent of Code. This is my workflow:
 
-## Usage
+## create a new day
 
-    # run tests for day01
-    $ go test aoc/cmd/day01
+```bash
+cp -r template 01 # or whatever day
+```
 
-    # run the day01
-    $ go run aoc/cmd/day01
+## run tests for day 1
+
+```bash
+go test aoc/01
+```
+
+## run the day 1
+
+```bash
+go run aoc/01
+```
 
 ## Config
 
@@ -19,10 +29,14 @@ Folder structure:
 
     ├── 01
     │   ├── main.go
-    │   └── mian_test.go
+    │   └── main_test.go
     ├── template
     │   ├── main.go
     │   └── main_test.go
     └── utils
         ├── read_file.go
         └── read_http.go
+
+```
+
+```
