@@ -29,6 +29,7 @@ var `AOC_SESSION`. You can to get the session token from the cookie web browser.
 
 Folder structure:
 
+```text
     ├── 01
     │   ├── main.go
     │   └── main_test.go
@@ -38,7 +39,4 @@ Folder structure:
     └── utils
         ├── read_file.go
         └── read_http.go
-
-```
-
 ```
