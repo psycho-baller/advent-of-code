@@ -1,3 +1,1 @@
-for day in {02..25}; do 
-cp -av 01/ $day
-done
+# My solutions for [advent of code](https://adventofcode.com) over the years
