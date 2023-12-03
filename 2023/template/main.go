@@ -3,13 +3,15 @@ package main
 import (
 	"fmt"
 	"os"
+	"time"
 
 	"aoc/utils"
 )
 
 func main() {
+	// get the day of the month using the current time
+	day := time.Now().Day()
 	// read from http request
-	day := 1
 	input, err := utils.ReadHTTP(2023, day)
 	if err != nil {
 		fmt.Println(err)
