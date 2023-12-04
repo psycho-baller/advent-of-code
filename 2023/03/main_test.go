@@ -27,7 +27,7 @@ func Test(t *testing.T) {
 	})
 
 	t.Run("part 2", func(t *testing.T) {
-		expected := 0 // edit this
+		expected := 467835 // edit this
 		actual := part2(input)
 
 		assert.Equal(actual, expected)
