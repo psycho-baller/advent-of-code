@@ -18,6 +18,7 @@ sumOfList = foldr (+) 0
 computeB :: [Int] -> [Int] -> Int
 computeB ls rs = sumOfList $ map (\l -> l * getCountofNumber rs l) ls
 
+-- l r = sum $ map (\el -> el * length (filter (== el) r)) l
 main :: IO ()
 main = do
   str <- getContents
